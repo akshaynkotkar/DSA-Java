@@ -84,7 +84,7 @@ and work the program for that we need to consider the time complexity and need t
                 {
                     count ++;
                     break;   //bcz if i/p is 12 we know that if 12 is divisible by 2 then no need to proceed
-                             //bcz already not a prime no.
+                    //bcz already not a prime no.
                 }
             }
             if(count==0)
