@@ -1,15 +1,19 @@
-//To check whether element is present or not
+
+//Given an array of size N and an integer X .The task is to find all the indices of the integer X in the array.
 package recursion;
 
 import java.util.Scanner;
 
-public class findValueArray {
-    static boolean search(int arr[],int n,int target,int idx)
+public class findAllIndexes {
+    static void  findAllIndices(int arr[],int n,int target,int idx)
     {
-        if(idx>=n) return false;
+        if(idx>=n) return;
 
-        if(arr[idx]==target) return true;
-        return search(arr,n,target,idx+1);
+        if(arr[idx]==target)
+        {
+            System.out.println(idx);
+        }
+      findAllIndices(arr,n,target,idx+1);
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -23,13 +27,7 @@ public class findValueArray {
         {
             arr[i]=sc.nextInt();
         }
-        if(search(arr,n,target,0))
-        {
-            System.out.println("Element Found");
-        }
-        else
-        {
-            System.out.println("Element Not found");
-        }
+        System.out.println("Element present at the indexes:");
+        findAllIndices(arr,n,target,0);
     }
 }

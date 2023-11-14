@@ -1,3 +1,4 @@
+//To check value is present in the index or not if present then return its index.
 package recursion;
 
 import java.util.Scanner;
