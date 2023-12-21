@@ -2,7 +2,6 @@
 //99801
 package array;
 
-import javafx.scene.transform.Scale;
 
 import java.util.Scanner;
 
